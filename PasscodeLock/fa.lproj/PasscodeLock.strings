@@ -1,0 +1,33 @@
+/* 
+  PasscodeLock.strings
+  PasscodeLock
+
+  Created by Yanko Dimitrov on 8/28/15.
+  Copyright (c) 2015 Yanko Dimitrov. All rights reserved.
+*/
+
+/* Enter Passcode State */
+"PasscodeLockEnterTitle" = "رمز عبور";
+"PasscodeLockEnterDescription" = "رمز عبور را وارد کنید";
+
+/* Set Passcode State */
+"PasscodeLockSetTitle" = "رمز عبور";
+"PasscodeLockSetDescription" = "رمز عبور دلخواه خود را وارد کنید.";
+
+/* Confirm Passcode State */
+"PasscodeLockConfirmTitle" = "تایید رمز عبور";
+"PasscodeLockConfirmDescription" = "رمز عبور دلخواه خود را مجدد وارد کنید.";
+
+/* Change Passcode State */
+"PasscodeLockChangeTitle" = "رمز عبور قبلی";
+"PasscodeLockChangeDescription" = "رمز عبور قبلی خود را وارد کنید.";
+
+/* Passcode Mismatch State */
+"PasscodeLockMismatchTitle" = "دوباره تلاش کنید";
+"PasscodeLockMismatchDescription" = "رمز عبور همسان نیست";
+
+/* Touch ID Reason */
+"PasscodeLockTouchIDReason" = "احراز هویت برای دسترسی به برنامه";
+
+/* Touch ID Fallback Button */
+"PasscodeLockTouchIDButton" = "رمز عبور";
