@@ -34,7 +34,7 @@ open class PasscodeLockPresenter {
         
         passcodeLockVC = viewController
     }
-
+    
     public convenience init(mainWindow window: UIWindow?, configuration: PasscodeLockConfigurationType) {
         
         let passcodeLockVC = PasscodeLockViewController(state: .enterPasscode, configuration: configuration)
@@ -75,12 +75,13 @@ open class PasscodeLockPresenter {
         mainWindow?.makeKeyAndVisible()
         
         if animated {
-        
+            
             animatePasscodeLockDismissal()
             
         } else {
             
-            passcodeLockWindow.windowLevel = 0
+            passcodeLockWindow.windowLevel = 2
+            passcodeLockWindow.isHidden = true
             passcodeLockWindow.rootViewController = nil
         }
     }
@@ -99,9 +100,10 @@ open class PasscodeLockPresenter {
             },
             completion: { [weak self] _ in
                 
-                self?.passcodeLockWindow.windowLevel = 0
+                self?.passcodeLockWindow.windowLevel = 2
                 self?.passcodeLockWindow.rootViewController = nil
                 self?.passcodeLockWindow.alpha = 1
+                self?.passcodeLockWindow.isHidden = true
             }
         )
     }
