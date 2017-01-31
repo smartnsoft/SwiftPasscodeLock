@@ -105,6 +105,16 @@ open class PasscodeLockViewController: UIViewController, PasscodeLockTypeDelegat
         cancelButton?.isHidden = !passcodeLock.state.isCancellableAction
         touchIDButton?.isHidden = !passcodeLock.isTouchIDAllowed
     }
+  
+    // MARK: - Orientations
+  
+  open override var shouldAutorotate: Bool {
+    return self.passcodeConfiguration.shouldAutorotate
+  }
+  
+  open override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+    return self.passcodeConfiguration.supportedInterfaceOrientations
+  }
     
     // MARK: - Events
     
